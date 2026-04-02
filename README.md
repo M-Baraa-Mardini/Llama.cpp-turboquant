@@ -6,6 +6,7 @@ This setup runs **Hermes 3 (8B)** locally using `llama.cpp` and connects it to *
 * **OS:** Windows
 * **GPU:** Nvidia (Tested on a 4GB GTX 1650)
 * **CPU:** Intel  (Tested on a core i5 10300H)
+* **RAM:** 16GB DDR4
 * **Model:** A GGUF file of `hermes3:8b` (You can easily grab this via Ollama or Huggingface)
 * **Software:** A compiled version of `llama.cpp` (specifically `llama-server.exe`) 
 
