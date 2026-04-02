@@ -2,7 +2,7 @@
 
 This setup runs **Hermes 3 (8B)** locally using `llama.cpp` and connects it to **AnythingLLM** to give it free web search capabilities (RAG). It's specifically optimized to squeeze a massive 16,000 token context window into an older 4GB VRAM graphics card (like an Nvidia GTX 1650) without crashing.
 
-## 🛠️ Prerequisites
+## Prerequisites
 * **OS:** Windows
 * **GPU:** Nvidia (Tested on a 4GB GTX 1650)
 * **Model:** A GGUF file of `hermes3:8b` (You can easily grab this via Ollama or Huggingface)
