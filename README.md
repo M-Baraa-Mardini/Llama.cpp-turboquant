@@ -16,7 +16,10 @@ This setup runs **Hermes 3 (8B)** locally using `llama.cpp` and connects it to *
 First, we need to start the brain. We are bypassing standard UI tools and running `llama-server.exe` directly via the command prompt. This lets us force specific memory optimizations so the context cache doesn't instantly fill up our tiny GPU.
 
 ## Download CMak
+https://cmake.org/download/
+
 ## Install the Nvidia CUDA Toolkit
+https://developer.nvidia.com/cuda-downloads
 
 
 Open your Command Prompt and run this exact command. *(Note: You will need to replace the absolute file paths with wherever your specific server and model files are located).*
