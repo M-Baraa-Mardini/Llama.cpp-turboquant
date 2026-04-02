@@ -5,6 +5,7 @@ This setup runs **Hermes 3 (8B)** locally using `llama.cpp` and connects it to *
 ## Prerequisites
 * **OS:** Windows
 * **GPU:** Nvidia (Tested on a 4GB GTX 1650)
+* **CPU:** Intel  (Tested on a core i5 10300H)
 * **Model:** A GGUF file of `hermes3:8b` (You can easily grab this via Ollama or Huggingface)
 * **Software:** A compiled version of `llama.cpp` (specifically `llama-server.exe`) 
 
@@ -37,7 +38,7 @@ C:\path\to\your\llama-server.exe -m "C:\path\to\your\model\hermes3-8b.gguf" -c <
 
 e.g C:\Users\HP\llama-cpp-turboquant\build\bin\Release\llama-server.exe -m "D:\2026\LLM\Hermes-3-Llama-3.1-8B-Q4_K_M.gguf" -c 16384 --cache-type-k q4_0 --cache-type-v q4_0
 ```
-
+Note the building my take 20 ~ 30 minutes based on your device
 -c 16382: This forces a massive ~16K context window, giving the AI plenty of room to read web articles.
 
 --cache-type q4_0: This compresses the short-term memory cache down to 4-bit. This is the magic trick that makes a 16K context window fit on a 4GB card without throwing an Out-of-Memory error!
