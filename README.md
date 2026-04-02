@@ -33,3 +33,10 @@ cmake --build . --config Release
 C:\path\to\your\llama-server.exe -m "C:\path\to\your\model\hermes3-8b.gguf" -c <window size> --cache-type-k q4_0 --cache-type-v q4_0
 
 e.g C:\Users\HP\llama-cpp-turboquant\build\bin\Release\llama-server.exe -m "D:\2026\LLM\Hermes-3-Llama-3.1-8B-Q4_K_M.gguf" -c 16384 --cache-type-k q4_0 --cache-type-v q4_0
+```
+
+-c 16382: This forces a massive ~16K context window, giving the AI plenty of room to read web articles.
+
+--cache-type q4_0: This compresses the short-term memory cache down to 4-bit. This is the magic trick that makes a 16K context window fit on a 4GB card without throwing an Out-of-Memory error!
+
+Once the console says HTTP server listening on 127.0.0.1:8080, leave that black window open in the background.
