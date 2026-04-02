@@ -22,7 +22,7 @@ https://cmake.org/download/
 https://developer.nvidia.com/cuda-downloads
 
 
-Open your Command Prompt and run this exact command. *(Note: You will need to replace the absolute file paths with wherever your specific server and model files are located).*
+Open your Command Prompt and run this exact command. *(Note: You will need to replace the absolute file paths with wherever your specific server and model files are yours).*
 
 ```cmd
 git clone https://github.com/TheTom/llama-cpp-turboquant.git
